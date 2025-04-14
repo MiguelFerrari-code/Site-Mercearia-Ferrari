@@ -6,32 +6,49 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #f6c6a7;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
+html, body {
+    height: 100%;
+}
+
+/*Header*/ 
 header {
     height: 200px;
     width: 100%;
     background-color: #f6f1e5;
-    box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.3); 
+    box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.3);
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
+
 header img{
     width: 150px;
     height: auto;
+    margin-left: 30px;
 }
+
 
 header div#Branco{
     width: 150px;
 
+
 }
+
 
 header nav{
     justify-content: space-around;
     min-width: 200px;
     min-height: 0px;
 }
+
 
 header nav a{
     margin: 20px;
@@ -42,12 +59,34 @@ header nav a:hover{
     color: rgb(252, 27, 27);
 }
 
-header h1{
+
+header h1 {
+    font-family: 'Literata', serif;
     margin: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 420px;
+    height: 58px;
 }
+
+/*Main*/
+
+main{
+   
+    display: block;
+    padding-top: 30px;
+}
+
+
+#Produtos_Do_Dia{
+    margin-top: 10px;
+    border: 5px solid #000000;
+    border-radius: 10px;
+    height: 150px;
+    width: 400px;
+}
+
 
 main section{
     display: flex;
@@ -56,18 +95,72 @@ main section{
 }
 main section div{
     text-align: center;
-    border: 1px solid black;
+    border: 10px solid #f6f1e5;
+    border-radius: 20px;
     min-width: 30%;
     min-height: 50vh;
+    margin-bottom: 60px;
+    margin-top: 60px;
 }
 
+
+/*Footer*/
+
+
+
 footer {
-    height: auto;
-    width: auto;
     background-color: #f6f1e5;
-    box-shadow: 0 -4px 6px -2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 -4px 6px -2px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
-}
+    padding: 30px 5vw;
+    flex-wrap: wrap;
+  }
+  
+  .footer-info, .footer-maps {
+    flex: 1 1 300px;
+    margin: 10px 20px;
+  }
+  
+  footer h3 {
+    text-align: left;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    color: #7c4f1d;
+  }
+  
+  footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  footer li {
+    margin-bottom: 8px;
+    font-size: 1em;
+  }
+  
+  .footer-maps iframe {
+    width: 100%;
+    max-width: 300px;
+    height: 150px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  @media (max-width: 700px) {
+    footer {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .footer-info, .footer-maps {
+      margin: 10px 0;
+      width: 90%;
+    }
+    .footer-maps iframe {
+      max-width: 100%;
+    }
+  }
+
 
 
