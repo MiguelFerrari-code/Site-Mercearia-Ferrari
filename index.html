@@ -1,85 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon_com_fundo-removebg-preview.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
     <title>Mercearia Ferrari</title>
+    <link rel="shortcut icon" href="favicon_com_fundo-removebg-preview.png" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Literata:wght@700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    
-
     <header>
-        <a href="index.html"><img src="logo.png" alt=""></a>
-        <div>
-            <h1>Mercearia Ferrari</h1>      
-            <nav>
+        <div class="logo">
+            <a href="index.html"><img src="logo.png" alt="Mercearia Ferrari"></a>
+        </div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon" aria-label="Abrir menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <div class="header-center">
+            <h1>Mercearia Ferrari</h1>
+            <nav class="menu">
                 <a href="index.html">Home</a>
                 <a href="Produtos.html">Produtos</a>
                 <a href="Contato.html">Contato</a>
-                <a href="NossaHistoria.html">Nossa Historória</a>
-           
+                <a href="NossaHistoria.html">Nossa História</a>
+                <div class="auth-buttons mobile">
+                    <a href="">ENTRAR</a>
+                    <a href="">CADASTRAR</a>
+                </div>
             </nav>
         </div>
-
-
-        <div id="Branco">
-             <a href="">ENTRAR</a>
-             <a href="">CADASTRAR</a>
+        <div class="auth-buttons desktop">
+            <a href="">ENTRAR</a>
+            <a href="">CADASTRAR</a>
         </div>
     </header>
 
-
     <main>
-            <div id="Produtos_Do_Dia">
-                 <img src="Frame 3.png" alt="">
+        <div id="Produtos_Do_Dia">
+            <img src="Frame 3.png" alt="">
+        </div>
+        <section>
+            <div>
+                <h3>Legumes</h3>
             </div>
-
-
-           <section>
-              <div>
-                   <h3>Legumes</h3>
-                   <img src="Legumes.png" alt="">
-              </div>
-
-
-              <div>
-                 <h3>Legumes e Frutas</h3>
-                 <img src="Frutas.png" alt="">
-              </div>
-
-
-              <div>
-                  <h3>Verduras </h3>
-                  <img src="Verduras.png" alt="">
-              </div>
-
-
-           </section>
+            <div>
+                <h3>Legumes e Frutas</h3>
+            </div>
+            <div>
+                <h3>Verduras</h3>
+            </div>
+        </section>
     </main>
 
     <footer>
-
         <section class="footer-info">
-          <h3>Informações</h3>
-          <ul>
-            <li><strong>Telefone de contato:</strong> 35 99905-0029, 3214-7214</li>
-            <li><strong>Horário de funcionamento:</strong> 8h às 20h de segunda a sábado, 8h às 12h domingo</li>
-          </ul>
+            <h3>Informações</h3>
+            <ul>
+                <li><strong>Telefone de contato:</strong> 35 99905-0029, 3214-7214</li>
+                <li><strong>Horário de funcionamento:</strong> 8h às 20h de segunda a sábado, 8h às 12h domingo</li>
+            </ul>
         </section>
-
         <section class="footer-maps">
-          <h3>Localização</h3>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.0000000000005!2d-45.431165!3d-21.551116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ca928b2d89e2fd%3A0x5903a63559125668!2sMercearia%20Ferrari!5e0!3m2!1spt-BR!2sbr!4v1713123456789"
-            width="250" height="150" style="border:1px solid #ccc; border-radius:8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
+            <h3>Localização</h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.0000000000005!2d-45.431165!3d-21.551116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ca928b2d89e2fd%3A0x5903a63559125668!2sMercearia%20Ferrari!5e0!3m2!1spt-BR!2sbr!4v1713123456789"
+                width="250" height="150" style="border:1px solid #ccc; border-radius:8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </section>
-
     </footer>
-      
-
 </body>
 </html>
